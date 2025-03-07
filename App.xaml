@@ -1,0 +1,38 @@
+﻿<Application 
+    x:Class="PruebaExamen00.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:local="clr-namespace:PruebaExamen00"
+    StartupUri="MainWindow.xaml"
+    >
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <materialDesign:BundledTheme BaseTheme="Dark" PrimaryColor="DeepPurple" SecondaryColor="Lime"/>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesign2.Defaults.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.Blue.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/MaterialDesignColor.Lime.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <Style TargetType="{x:Type TextBlock}" x:Key="MaterialDesignSubtitle1TextBlock">
+                <Setter Property="Foreground" Value="Lime"/>
+                <Setter Property="FontSize" Value="18"/>
+            </Style>
+            <Style TargetType="{x:Type Button}" x:Key="MaterialDesignFlatButton">
+                <Setter Property="Foreground" Value="Lime"/>
+                <Setter Property="Background" Value="Black" />
+                <Setter Property="BorderBrush" Value="Black" />
+            </Style>
+            <Style TargetType="{x:Type TextBlock}" x:Key="MaterialDesignCaptionTextBlock">
+                <Setter Property="Foreground" Value="Lime" />
+                <Setter Property="FontWeight" Value="Bold" />
+            </Style>
+            <Style TargetType="{x:Type TextBlock}" x:Key="MaterialDesignTextBlock">
+                <Setter Property="Foreground" Value="Lime" />
+                <Setter Property="TextWrapping" Value="Wrap" />
+            </Style>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
