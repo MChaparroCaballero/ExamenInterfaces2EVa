@@ -27,6 +27,30 @@ namespace PruebaExamen00
             InitializeComponent();
         }
 
-        
+        private void ToggleMode_Checked(object sender, RoutedEventArgs e)
+        {
+            if (ToggleMode.IsChecked==false)
+            {
+                imagen2.BorderBrush = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#000000"));
+                fondo.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFDADADA"));
+               imagen3.BorderBrush = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#000000"));
+                imagen4.BorderBrush = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#000000"));
+                borderImagen1.BorderBrush = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#000000"));
+
+            }
+
+            if (ToggleMode.IsChecked == true)
+            {
+                imagen2.BorderBrush = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF1200E8"));
+                imagen3.BorderBrush = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF1200E8"));
+                imagen4.BorderBrush = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF1200E8"));
+
+                borderImagen1.BorderBrush = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF1200E8"));
+                fondo.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#000000"));
+
+
+
+            }
+        }
     }
 }

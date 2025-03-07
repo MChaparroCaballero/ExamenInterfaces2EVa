@@ -18,9 +18,9 @@
         <StackPanel Orientation="Vertical" Grid.Row="0" Background="#FFB7DEEC">
             <UniformGrid Columns="2">
                 <TextBlock Text="LinkiaGram" HorizontalAlignment="Center"  VerticalAlignment="Center" Padding="10" Style="{StaticResource MaterialDesignSubtitle1TextBlock}" FontWeight="Bold" Foreground="#FF0004FF"/>
-                <Button x:Name="ToggleMode" Cursor="Hand" Style="{StaticResource MaterialDesignFlatButton}"  Background="#FFB7DEEC" BorderThickness="0">
-                    <materialDesign:PackIcon Kind="ThemeLightDark" Foreground="#FF0010FF"  />
-                </Button>
+                <ToggleButton x:Name="ToggleMode" Cursor="Hand" Background="White" BorderThickness="0" Foreground="White" BorderBrush="White" Checked="ToggleMode_Checked" Unchecked="ToggleMode_Checked">
+                    <materialDesign:PackIcon Kind="ThemeLightDark" Foreground="#FF0004FF" RenderTransformOrigin="0.351,0.351"  />
+                </ToggleButton>
             </UniformGrid>
             <UniformGrid Background="#FF308CAB" Grid.Row="1" Columns="4" >
                 <Button Style="{StaticResource MaterialDesignFlatButton}" Margin="10" Background="#FFAAEEF3" Foreground="#FFAAEEF3">
@@ -38,10 +38,10 @@
             </UniformGrid>
         </StackPanel>
         <ScrollViewer Grid.Row="1" >
-            <StackPanel Background="White">
+            <StackPanel Background="#FFDADADA" Name="fondo">
 
-                <Border Margin="10" Padding="10" CornerRadius="5" BorderThickness="2" BorderBrush="Black">
-                    <StackPanel>
+                <Border Margin="10" Padding="10" CornerRadius="5" BorderThickness="2" BorderBrush="Black" x:Name="borderImagen1" Background="White">
+                    <StackPanel >
                         
                             <TextBlock Text="VAGA89" Background="#FFC5E7F3" Style="{StaticResource MaterialDesignCaptionTextBlock}" Foreground="#FF1200E8"/>
                         <Image Source="friends.png" Height="200" Stretch="UniformToFill"/>
@@ -51,7 +51,7 @@
                         
                     </StackPanel>
                 </Border>
-                <Border Margin="10" Padding="10" CornerRadius="5" BorderBrush="Black" BorderThickness="2">
+                <Border Margin="10" Padding="10" CornerRadius="5" BorderBrush="Black" BorderThickness="2" Name="imagen2" Background="White">
                     <StackPanel>
                         <TextBlock  Text="TREX54" Style="{StaticResource MaterialDesignCaptionTextBlock}" Foreground="#FF1200E8" Background="#FFC5E7F3"/>
                         <Image Source="/Images/JoseYDINO.png" Height="200" Stretch="UniformToFill"/>
@@ -59,7 +59,7 @@
                     </StackPanel>
                 </Border>
 
-                <Border Margin="10" Padding="10" CornerRadius="5" BorderBrush="Black" BorderThickness="2">
+                <Border Margin="10" Padding="10" CornerRadius="5" BorderBrush="Black" BorderThickness="2" Name="imagen3" Background="White">
                     <StackPanel>
                         <TextBlock Background="#FFC5E7F3" Text="Hormonauta23" Style="{StaticResource MaterialDesignCaptionTextBlock}" Foreground="#FF1200E8"/>
                         <Image Source="gym.png" Height="200" Stretch="UniformToFill"/>
@@ -67,7 +67,7 @@
                     </StackPanel>
                 </Border>
 
-                <Border Margin="10" Padding="10" CornerRadius="5" BorderBrush="Black" BorderThickness="2">
+                <Border Margin="10" Padding="10" CornerRadius="5" BorderBrush="Black" BorderThickness="2" Name="imagen4" Background="White">
                     <StackPanel>
                         <TextBlock Text="Sara_ndonga" Foreground="#FF1200E8" Background="#FFC5E7F3" Style="{StaticResource MaterialDesignCaptionTextBlock}"/>
                         <Image Source="exams.png" Height="200" Stretch="UniformToFill"/>
