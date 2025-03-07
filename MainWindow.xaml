@@ -63,7 +63,7 @@
                     <StackPanel>
                         <TextBlock Background="#FFC5E7F3" Text="Hormonauta23" Style="{StaticResource MaterialDesignCaptionTextBlock}" Foreground="#FF1200E8"/>
                         <Image Source="gym.png" Height="200" Stretch="UniformToFill"/>
-                        <TextBlock Foreground="#FF1200E8" Background="#FFC5E7F3" Text="No pain, no gain." Style="{StaticResource MaterialDesignTextBlock}"/>
+                        <TextBlock Foreground="Black" Background="#FFC5E7F3" Text="No pain, no gain." Style="{StaticResource MaterialDesignTextBlock}"/>
                     </StackPanel>
                 </Border>
 
@@ -71,7 +71,7 @@
                     <StackPanel>
                         <TextBlock Text="Sara_ndonga" Foreground="#FF1200E8" Background="#FFC5E7F3" Style="{StaticResource MaterialDesignCaptionTextBlock}"/>
                         <Image Source="exams.png" Height="200" Stretch="UniformToFill"/>
-                        <TextBlock Foreground="#FF1200E8" Background="#FFC5E7F3" Text="Último examen del curso. ¿Aprobaré?" Style="{StaticResource MaterialDesignTextBlock}"/>
+                        <TextBlock Foreground="Black" Background="#FFC5E7F3" Text="Último examen del curso. ¿Aprobaré?" Style="{StaticResource MaterialDesignTextBlock}"/>
                     </StackPanel>
                 </Border>
             </StackPanel>
