@@ -16,20 +16,20 @@
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/MaterialDesignColor.Lime.xaml"/>
             </ResourceDictionary.MergedDictionaries>
             <Style TargetType="{x:Type TextBlock}" x:Key="MaterialDesignSubtitle1TextBlock">
-                <Setter Property="Foreground" Value="Lime"/>
+                <Setter Property="Foreground" Value="Black"/>
                 <Setter Property="FontSize" Value="18"/>
             </Style>
             <Style TargetType="{x:Type Button}" x:Key="MaterialDesignFlatButton">
-                <Setter Property="Foreground" Value="Lime"/>
-                <Setter Property="Background" Value="Black" />
+                <Setter Property="Foreground" Value="Black"/>
+                <Setter Property="Background" Value="White" />
                 <Setter Property="BorderBrush" Value="Black" />
             </Style>
             <Style TargetType="{x:Type TextBlock}" x:Key="MaterialDesignCaptionTextBlock">
-                <Setter Property="Foreground" Value="Lime" />
+                <Setter Property="Foreground" Value="Black" />
                 <Setter Property="FontWeight" Value="Bold" />
             </Style>
             <Style TargetType="{x:Type TextBlock}" x:Key="MaterialDesignTextBlock">
-                <Setter Property="Foreground" Value="Lime" />
+                <Setter Property="Foreground" Value="Black" />
                 <Setter Property="TextWrapping" Value="Wrap" />
             </Style>
 

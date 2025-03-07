@@ -8,66 +8,70 @@
         mc:Ignorable="d"
         Style="{StaticResource MaterialDesignWindow}"
         Title="LinkiaGram by Metalex84" Height="600" Width="300"
-        >
+        ResizeMode="NoResize"  >
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="0.15*"/>
             <RowDefinition Height="0.85*"/>
         </Grid.RowDefinitions>
 
-        <StackPanel Orientation="Vertical" Grid.Row="0" Background="Black">
+        <StackPanel Orientation="Vertical" Grid.Row="0" Background="#FFB7DEEC">
             <UniformGrid Columns="2">
-                <TextBlock Text="LinkiaGram" HorizontalAlignment="Center"  VerticalAlignment="Center" Padding="10" Style="{StaticResource MaterialDesignSubtitle1TextBlock}" FontWeight="Bold"/>
-                <Button x:Name="ToggleMode" Cursor="Hand" Style="{StaticResource MaterialDesignFlatButton}">
-                    <materialDesign:PackIcon Kind="Lightbulb"/>
+                <TextBlock Text="LinkiaGram" HorizontalAlignment="Center"  VerticalAlignment="Center" Padding="10" Style="{StaticResource MaterialDesignSubtitle1TextBlock}" FontWeight="Bold" Foreground="#FF0004FF"/>
+                <Button x:Name="ToggleMode" Cursor="Hand" Style="{StaticResource MaterialDesignFlatButton}"  Background="#FFB7DEEC" BorderThickness="0">
+                    <materialDesign:PackIcon Kind="ThemeLightDark" Foreground="#FF0010FF"  />
                 </Button>
             </UniformGrid>
-            <UniformGrid Background="Black" Grid.Row="1" Columns="4">
-                <Button Style="{StaticResource MaterialDesignFlatButton}" Margin="10">
-                    <materialDesign:PackIcon Kind="Home"/>
+            <UniformGrid Background="#FF308CAB" Grid.Row="1" Columns="4" >
+                <Button Style="{StaticResource MaterialDesignFlatButton}" Margin="10" Background="#FFAAEEF3" Foreground="#FFAAEEF3">
+                    <materialDesign:PackIcon Kind="Home" Foreground="#FF0004FF"/>
                 </Button>
-                <Button Style="{StaticResource MaterialDesignFlatButton}" Margin="10">
-                    <materialDesign:PackIcon Kind="Search"/>
+                <Button Style="{StaticResource MaterialDesignFlatButton}" Margin="10" Background="#FFAAEEF3" Foreground="#FF0056FF">
+                    <materialDesign:PackIcon Kind="Search" Foreground="#FF0004FF"/>
                 </Button>
-                <Button Style="{StaticResource MaterialDesignFlatButton}" Margin="10">
-                    <materialDesign:PackIcon Kind="Explore"/>
+                <Button Style="{StaticResource MaterialDesignFlatButton}" Margin="10" Background="#FFAAEEF3">
+                    <materialDesign:PackIcon Kind="Explore" Foreground="#FF0004FF"/>
                 </Button>
-                <Button Style="{StaticResource MaterialDesignFlatButton}" Margin="10" Cursor="Hand">
-                    <materialDesign:PackIcon Kind="Menu"/>
+                <Button Style="{StaticResource MaterialDesignFlatButton}" Margin="10" Cursor="Hand" Background="#FFAAEEF3" Foreground="#FF989BA4">
+                    <materialDesign:PackIcon Kind="Menu" Foreground="#FF0004FF"/>
                 </Button>
             </UniformGrid>
         </StackPanel>
-        <ScrollViewer Grid.Row="1">
-            <StackPanel Background="Black">
+        <ScrollViewer Grid.Row="1" >
+            <StackPanel Background="White">
 
-                <Border Margin="10" Padding="10" CornerRadius="5">
+                <Border Margin="10" Padding="10" CornerRadius="5" BorderThickness="2" BorderBrush="Black">
                     <StackPanel>
-                        <TextBlock Text="Vaga98" Style="{StaticResource MaterialDesignCaptionTextBlock}"/>
+                        
+                            <TextBlock Text="VAGA89" Background="#FFC5E7F3" Style="{StaticResource MaterialDesignCaptionTextBlock}" Foreground="#FF1200E8"/>
                         <Image Source="friends.png" Height="200" Stretch="UniformToFill"/>
-                        <TextBlock Text="Fue un viaje irrepetible. ¿Volvemos este verano?" Style="{StaticResource MaterialDesignTextBlock}"/>
+                        
+                            <TextBlock Text="El paraiso real es donde estan tus amigos" Style="{StaticResource MaterialDesignTextBlock}" Foreground="Black"
+                        Background="#FFC5E7F3"/>
+                        
                     </StackPanel>
                 </Border>
-                <Border Margin="10" Padding="10" CornerRadius="5">
+                <Border Margin="10" Padding="10" CornerRadius="5" BorderBrush="Black" BorderThickness="2">
                     <StackPanel>
-                        <TextBlock Text="Cateto21" Style="{StaticResource MaterialDesignCaptionTextBlock}"/>
-                        <Image Source="work.png" Height="200" Stretch="UniformToFill"/>
-                        <TextBlock Text="Primer día de prácticas. Esto se me está haciendo eterno..." Style="{StaticResource MaterialDesignTextBlock}"/>
+                        <TextBlock  Text="TREX54" Style="{StaticResource MaterialDesignCaptionTextBlock}" Foreground="#FF1200E8" Background="#FFC5E7F3"/>
+                        <Image Source="/Images/JoseYDINO.png" Height="200" Stretch="UniformToFill"/>
+                        <TextBlock Background="#FFC5E7F3" Text="Creo que sobrevivire mis practicas, o por lo menos lo de hoy" Style="{StaticResource MaterialDesignTextBlock}"/>
                     </StackPanel>
                 </Border>
 
-                <Border Margin="10" Padding="10" CornerRadius="5">
+                <Border Margin="10" Padding="10" CornerRadius="5" BorderBrush="Black" BorderThickness="2">
                     <StackPanel>
-                        <TextBlock Text="Hormonauta23" Style="{StaticResource MaterialDesignCaptionTextBlock}"/>
+                        <TextBlock Background="#FFC5E7F3" Text="Hormonauta23" Style="{StaticResource MaterialDesignCaptionTextBlock}" Foreground="#FF1200E8"/>
                         <Image Source="gym.png" Height="200" Stretch="UniformToFill"/>
-                        <TextBlock Text="No pain, no gain." Style="{StaticResource MaterialDesignTextBlock}"/>
+                        <TextBlock Foreground="#FF1200E8" Background="#FFC5E7F3" Text="No pain, no gain." Style="{StaticResource MaterialDesignTextBlock}"/>
                     </StackPanel>
                 </Border>
 
-                <Border Margin="10" Padding="10" CornerRadius="5">
+                <Border Margin="10" Padding="10" CornerRadius="5" BorderBrush="Black" BorderThickness="2">
                     <StackPanel>
-                        <TextBlock Text="Sara_ndonga" Style="{StaticResource MaterialDesignCaptionTextBlock}"/>
+                        <TextBlock Text="Sara_ndonga" Foreground="#FF1200E8" Background="#FFC5E7F3" Style="{StaticResource MaterialDesignCaptionTextBlock}"/>
                         <Image Source="exams.png" Height="200" Stretch="UniformToFill"/>
-                        <TextBlock Text="Último examen del curso. ¿Aprobaré?" Style="{StaticResource MaterialDesignTextBlock}"/>
+                        <TextBlock Foreground="#FF1200E8" Background="#FFC5E7F3" Text="Último examen del curso. ¿Aprobaré?" Style="{StaticResource MaterialDesignTextBlock}"/>
                     </StackPanel>
                 </Border>
             </StackPanel>
