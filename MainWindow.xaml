@@ -15,15 +15,15 @@
             <RowDefinition Height="0.85*"/>
         </Grid.RowDefinitions>
 
-        <StackPanel Orientation="Vertical" Grid.Row="0" Background="#FFB7DEEC">
+        <StackPanel x:Name="fondoarriba" Orientation="Vertical" Grid.Row="0" Background="#FFB7DEEC">
             <UniformGrid Columns="2">
-                <TextBlock Text="LinkiaGram" HorizontalAlignment="Center"  VerticalAlignment="Center" Padding="10" Style="{StaticResource MaterialDesignSubtitle1TextBlock}" FontWeight="Bold" Foreground="#FF0004FF"/>
+                <TextBlock x:Name="nombreweb" Text="LinkiaGram" HorizontalAlignment="Center"  VerticalAlignment="Center" Padding="10" Style="{StaticResource MaterialDesignSubtitle1TextBlock}" FontWeight="Bold" Foreground="#FF0004FF"/>
                 <ToggleButton x:Name="ToggleMode" Cursor="Hand" Background="White" BorderThickness="0" Foreground="White" BorderBrush="White" Checked="ToggleMode_Checked" Unchecked="ToggleMode_Checked">
                     <materialDesign:PackIcon Kind="ThemeLightDark" Foreground="#FF0004FF" RenderTransformOrigin="0.351,0.351"  />
                 </ToggleButton>
             </UniformGrid>
-            <UniformGrid Background="#FF308CAB" Grid.Row="1" Columns="4" >
-                <Button Style="{StaticResource MaterialDesignFlatButton}" Margin="10" Background="#FFAAEEF3" Foreground="#FFAAEEF3">
+            <UniformGrid x:Name="menu" Background="#FF308CAB" Grid.Row="1" Columns="4" >
+                <Button x:Name="homeb" Style="{StaticResource MaterialDesignFlatButton}" Margin="10" Background="#FFAAEEF3" Foreground="#FFAAEEF3">
                     <materialDesign:PackIcon Kind="Home" Foreground="#FF0004FF"/>
                 </Button>
                 <Button Style="{StaticResource MaterialDesignFlatButton}" Margin="10" Background="#FFAAEEF3" Foreground="#FF0056FF">

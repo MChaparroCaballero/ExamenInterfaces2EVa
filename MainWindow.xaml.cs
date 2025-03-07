@@ -36,18 +36,23 @@ namespace PruebaExamen00
                imagen3.BorderBrush = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#000000"));
                 imagen4.BorderBrush = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#000000"));
                 borderImagen1.BorderBrush = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#000000"));
-
+                fondoarriba.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFB7DEEC"));
+                nombreweb.Foreground= new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF0004FF"));
+               menu.Background= new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF308CAB"));
+               
             }
 
             if (ToggleMode.IsChecked == true)
             {
+
+                fondoarriba.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF0004FF"));
                 imagen2.BorderBrush = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF1200E8"));
                 imagen3.BorderBrush = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF1200E8"));
                 imagen4.BorderBrush = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF1200E8"));
-
+                menu.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#000000"));
                 borderImagen1.BorderBrush = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF1200E8"));
                 fondo.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#000000"));
-
+                nombreweb.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFB7DEEC"));
 
 
             }
